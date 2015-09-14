@@ -1,7 +1,12 @@
+/*Jumbotron and Navbar CSS colors*/
 $jumbotron-bg: #97c4df;
 $navbar-default-bg: #b6eab4;
 
-
+/*CSS for btn-primary group*/
+.btn-primary 
+{
+    margin: 3px 1px;  
+}
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
