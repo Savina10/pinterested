@@ -2,6 +2,10 @@
   
   <div class="panel-body">
     <p id="notice"><%= notice %></p>
+    
+    <%# Outputs the pin image on the pins show (Pins) page %>
+      <%= image_tag @pin.image.url (:medium) %></br>
+    
     <p>
       <strong>Description:</strong>
         <%= @pin.description %>

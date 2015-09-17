@@ -18,6 +18,9 @@
       <tbody>
           <% @pins.each do |pin| %>
         <tr>
+          <%# Outputs the pin image on the pins index (Pins) page %>
+          <td><%= image_tag pin.image.url(medium) %></td>
+          
           <td><%= pin.description %></td>
           <td><%= link_to 'Show', pin, class: 'btn btn-primary btn-xs'%></td>
           <td><%= link_to 'Edit', edit_pin_path(pin), class: 'btn btn-primary btn-xs'%></td>
