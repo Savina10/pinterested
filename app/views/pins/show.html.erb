@@ -1,19 +1,23 @@
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+
 <div class="panel panel-default">
-  
-  <div class="panel-body">
-    <p id="notice"><%= notice %></p>
-    
+  <div class="panel-heading text-center">
     <%# Outputs the pin image on the pins show (Pins) page %>
       <%= image_tag @pin.image.url (:medium) %></br>
-    
+  </div>
+  
+  <div class="panel-body">
     <p>
       <strong>Description:</strong>
         <%= @pin.description %>
     </p>
   </div>
   
-  <div class="panel-footer">
-    <%= link_to 'Edit', edit_pin_path(@pin) %> |
-    <%= link_to 'Back', pins_path %>
+      <div class="panel-footer">
+        <%= link_to 'Edit', edit_pin_path(@pin) %> |
+        <%= link_to 'Back', pins_path %>
+      </div>
+    </div>
   </div>
 </div>
