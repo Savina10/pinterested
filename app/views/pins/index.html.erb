@@ -1,4 +1,4 @@
-<div class="pins transitions-enabled">
+<div id="pins" class="pins transitions-enabled">
 
       <% @pins.each do |pin| %>
       <div class="box">
@@ -15,6 +15,14 @@
               <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %><br />
           <% end %>
         <br />
-    </div>  
-  <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<br />
+<br />
+
+<div class="center">
+  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %> 
 </div>
